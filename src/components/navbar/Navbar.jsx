@@ -15,13 +15,13 @@ function Navbar() {
   return (
     <nav>
       <div className="left">
-        <a href="/" className="logo">
+        <Link to="/" className="logo">
           <img src="/home.png" alt="" />
           <span>Rentify</span>
-        </a>
-        <a href="/">Home</a>
-        <a href="/list">View All Properties</a>
-        <a href="/">About</a>
+        </Link>
+        <Link to="/">Home</Link>
+        <Link to="/list">View All Properties</Link>
+        <Link to="/">About</Link>
        
        
       </div>
@@ -39,10 +39,10 @@ function Navbar() {
           </div>
         ) : (
           <>
-            <a href="/login">Sign in</a>
-            <a href="/register" className="register">
+            <Link to="/login">Sign in</Link>
+            <Link to="/register" className="register">
               Sign up
-            </a>
+            </Link>
           </>
         )}
         <div className="menuIcon">
